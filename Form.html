@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เพิ่มข้อมูลผู้ใช้</title>
+</head>
+<body>
+  <h2>กรอกข้อมูลผู้ใช้</h2>
+  <form action="insert.php" method="post">
+    คำนำหน้า: <input type="text" name="pre_name" maxlength="6"><br><br>
+    ชื่อ: <input type="text" name="first_name" maxlength="50"><br><br>
+    นามสกุล: <input type="text" name="last_name" maxlength="50"><br><br>
+    ห้องเรียน: <input type="text" name="student_class" maxlength="6"><br><br>
+    เลขที่: <input type="number" name="student_number" max="99"><br><br>
+    อีเมล: <input type="email" name="email" maxlength="50"><br><br>
+    Username: <input type="text" name="user_name" maxlength="50"><br><br>
+    Password: <input type="password" name="password" maxlength="50"><br><br>
+    สถานะ: 
+    <select name="status">
+      <option value="admin_mook">Admin_mook</option>
+      <option value="superadmin">Superadmin</option>
+      <option value="student">Student</option>
+      <option value="other">Other</option>
+    </select><br><br>
+    <input type="submit" value="บันทึก">
+  </form>
+</body>
+</html>
